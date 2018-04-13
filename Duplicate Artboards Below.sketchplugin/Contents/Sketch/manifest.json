@@ -1,0 +1,23 @@
+{
+  "name": "Duplicate Artboard Below",
+  "identifier": "dupe.plugin",
+  "version": "0.0.1",
+  "description": "Duplicate artboard below",
+  "authorEmail": "sarah@madysondesigns.com",
+  "author": "Sarah Whinnem",
+  "commands": [
+    {
+      "name": "Duplicate Artboard Below",
+      "identifier": "duplicateartboardbelow",
+      "shortcut": "cmd shift d",
+      "script": "Duplicate Artboard Below.cocoascript"
+    }
+  ],
+  "menu" : {
+    "title" : "Duplicate Artboard Below",
+    "items" : [
+      "duplicateartboardbelow"
+    ],
+    "isRoot" : true
+  },
+}
