@@ -1,8 +1,8 @@
 {
-  "name": "Duplicate Below",
-  "identifier": "dupe.plugin",
-  "version": "0.0.1",
-  "description": "Duplicate artboard or symbol below",
+  "name": "MD Common",
+  "identifier": "md-common.plugin",
+  "version": "0.0.2",
+  "description": "My most used plugin actions",
   "authorEmail": "sarah@madysondesigns.com",
   "author": "Sarah Whinnem",
   "commands": [
