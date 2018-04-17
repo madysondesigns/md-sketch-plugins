@@ -10,13 +10,19 @@
       "name": "Duplicate Below",
       "identifier": "duplicatebelow",
       "shortcut": "cmd shift d",
-      "script": "Duplicate Below.cocoascript"
+      "script": "Duplicate_Below.cocoascript"
+    },
+    {
+        "name": "Resize to Fit Text Height",
+        "identifier": "resize_fit_text_height",
+        "script": "Resize_Fit_Text_Height.cocoascript"
     }
   ],
   "menu" : {
-    "title" : "Duplicate Below",
+    "title" : "!MD Common",
     "items" : [
-      "duplicatebelow"
+      "duplicatebelow",
+      "resize_fit_text_height"
     ],
     "isRoot" : true
   },
