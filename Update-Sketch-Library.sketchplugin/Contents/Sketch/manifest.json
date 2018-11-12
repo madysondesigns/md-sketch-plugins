@@ -1,0 +1,22 @@
+{
+  "name": "Update Sketch Library",
+  "identifier": "update-sketch-library.plugin",
+  "version": "0.0.1",
+  "description": "Update a remote Sketch library",
+  "authorEmail": "swhinnem@flatiron.com",
+  "author": "Sarah Whinnem",
+  "commands": [
+    {
+      "name": "Update Library",
+      "identifier": "updateLibrary",
+      "script": "Update_Library.cocoascript"
+    }
+  ],
+  "menu" : {
+    "title" : "Update Library",
+    "items" : [
+      "updateLibrary"
+    ],
+    "isRoot" : true
+  },
+}

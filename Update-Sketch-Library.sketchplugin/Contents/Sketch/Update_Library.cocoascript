@@ -1,0 +1,27 @@
+// Update Sketch Library
+
+var onRun = function(context) {
+  //reference the Sketch Document
+  var UI = require('sketch/ui');
+  var Library = require('sketch/dom').Library;
+  var libraryRSS = "https://s3.amazonaws.com/madysondesigns-sandbox/test-library/library.xml";
+
+
+  var lib = Library.getRemoteLibraryWithRSS(
+    libraryRSS,
+    (err, library) => {
+      if (err) {
+        // oh no, failed to load the library
+        UI.message("Uh oh :( Unable to load " + library);
+        console.log(err);
+      }
+      // todo: check whether the library was installed or updated, and show the correct message
+      UI.message(library.name + " updated!");
+      console.log(library);
+    }
+  );
+  console.log(lib);
+
+  // Pulled from https://github.com/bomberstudios/check-for-library-updates
+  AppController.sharedInstance().checkForAssetLibraryUpdates();
+}
