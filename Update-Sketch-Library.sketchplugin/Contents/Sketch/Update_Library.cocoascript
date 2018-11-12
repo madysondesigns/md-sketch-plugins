@@ -6,7 +6,8 @@ var onRun = function(context) {
   var Library = require('sketch/dom').Library;
   var libraryRSS = "https://s3.amazonaws.com/madysondesigns-sandbox/test-library/library.xml";
 
-
+  // https://medium.com/@almonk/how-to-automatically-update-your-sketch-libraries-using-rss-1a6b6be3d72f
+  // https://developer.sketchapp.com/reference/api/#get-a-remote-library-from-an-rss-feed-url
   var lib = Library.getRemoteLibraryWithRSS(
     libraryRSS,
     (err, library) => {
